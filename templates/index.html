@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM App</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <form method="POST" action="/">
+        <label for="message">Entrez votre texte :</label>
+        <input type="text" id="message" name="message" required>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
